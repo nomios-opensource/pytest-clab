@@ -1,10 +1,10 @@
 # pytest-clab
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/nomios-open-source/pytest-clab/tests.yml?branch=main)
-![Codecov](https://img.shields.io/codecov/c/github/nomios-open-source/pytest-clab)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/nomios-opensource/pytest-clab/tests.yml?branch=develop)
+[![codecov](https://codecov.io/github/nomios-opensource/pytest-clab/graph/badge.svg?token=EY5ADP9UP6)](https://codecov.io/github/nomios-opensource/pytest-clab)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pytest-clab)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/pytest-clab)
-![GitHub License](https://img.shields.io/github/license/nomios-open-source/pytest-clab)
+![GitHub License](https://img.shields.io/github/license/nomios-opensource/pytest-clab)
 
 `pytest-clab` is authored by [Thomas Bamihas](https://github.com/tbamihas), governed as a [benevolent dictatorship](CODE_OF_CONDUCT.md), and distributed under the [Apache 2.0 license](LICENSE).
 
@@ -244,7 +244,7 @@ Releases will follow semantic versioning (major.minor.patch). Before 1.0.0, brea
 
 ## Contributing
 
-Suggest a [feature](https://github.com/nomios-open-source/pytest-clab/issues/new?labels=enhancement) or report a [bug](https://github.com/nomios-open-source/pytest-clab/issues/new?labels=bug). Read our developer [guide](CONTRIBUTING.md).
+Suggest a [feature](https://github.com/nomios-opensource/pytest-clab/issues/new?labels=enhancement) or report a [bug](https://github.com/nomios-opensource/pytest-clab/issues/new?labels=bug). Read our developer [guide](CONTRIBUTING.md).
 
 ## License
 
