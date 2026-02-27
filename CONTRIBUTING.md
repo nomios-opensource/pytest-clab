@@ -67,7 +67,7 @@ Example: `feat: add support for custom node labels`
 
 ## Reporting Bugs & Requesting Features
 
-Open an issue on [GitHub Issues](https://github.com/nomios-open-source/pytest-clab/issues). For bugs, include steps to reproduce, expected behavior, and actual behavior.
+Open an issue on [GitHub Issues](https://github.com/nomios-opensource/pytest-clab/issues). For bugs, include steps to reproduce, expected behavior, and actual behavior.
 
 ## Code of Conduct
 
