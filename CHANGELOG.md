@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.1](https://github.com/nomios-opensource/pytest-clab/compare/v0.1.0...v0.1.1) (2026-02-27)
+
+
+### Bug Fixes
+
+* update dependencies ([d591836](https://github.com/nomios-opensource/pytest-clab/commit/d5918364284350ad02021f6767c0c915cf4afdeb))
+
+
+### Documentation
+
+* Update readme links ([09e4e1a](https://github.com/nomios-opensource/pytest-clab/commit/09e4e1ae7d12d98a5887939788fb67982689c356))
+
 ## 0.1.0 (2026-02-27)
 
 
