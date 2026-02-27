@@ -1,0 +1,83 @@
+[build-system]
+requires = ["uv_build>=0.9.17,<1.0.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = ""
+
+[project]
+name = "pytest-clab"
+version = "0.1.0"
+description = "A pytest plugin for managing containerlab topologies in tests."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+authors = [
+    { name = "Thomas Bamihas", email = "tom.bamihas@nomios.co.uk" }
+]
+keywords = [
+    "containerlab",
+    "network automation",
+    "network engineering",
+    "network testing",
+    "pytest",
+]
+classifiers = [
+    "Framework :: Pytest",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Telecommunications Industry",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Software Development :: Testing :: Mocking",
+    "Topic :: System :: Networking",
+]
+dependencies = [
+    "pytest>=9.0.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/nomios-open-source/pytest-clab"
+Repository = "https://github.com/nomios-open-source/pytest-clab"
+Issues = "https://github.com/nomios-open-source/pytest-clab/issues"
+
+[project.entry-points.pytest11]
+clab = "pytest_clab.plugin"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "e2e: marks tests as e2e tests (require containerlab)",
+]
+addopts = "-m 'not e2e'"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.19.0",
+    "pytest-cov>=7.0.0",
+    "ruff>=0.15.1",
+]
+
+[tool.coverage.run]
+source = ["pytest_clab"]
+branch = true
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["B", "C", "D", "E", "F", "I", "N", "RET", "S", "T", "W"]
+ignore = ["D212", "D415"]
+
+[tool.ruff.lint.per-file-ignores]
+"pytest_clab/runner.py" = ["S603"]
+"tests/**/*.py" = ["S101", "S108", "D100", "D103", "D104"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.mypy]
+strict = true
