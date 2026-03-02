@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/nomios-opensource/pytest-clab/compare/v0.1.1...v0.1.2) (2026-03-02)
+
+
+### Bug Fixes
+
+* left-split short_name extraction and sync uv.lock in releases ([8ee0eab](https://github.com/nomios-opensource/pytest-clab/commit/8ee0eab0383e4e57e8deed40f1757482561fde85))
+
 ## [0.1.1](https://github.com/nomios-opensource/pytest-clab/compare/v0.1.0...v0.1.1) (2026-02-27)
 
 
