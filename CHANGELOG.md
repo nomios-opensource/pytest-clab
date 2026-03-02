@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/nomios-opensource/pytest-clab/compare/v0.1.2...v0.1.3) (2026-03-02)
+
+
+### Documentation
+
+* update readme example and exception hierarchy ([3455950](https://github.com/nomios-opensource/pytest-clab/commit/3455950dc88076cf2eb7a081e41fb7828f496809))
+
 ## [0.1.2](https://github.com/nomios-opensource/pytest-clab/compare/v0.1.1...v0.1.2) (2026-03-02)
 
 
