@@ -7,7 +7,7 @@ module-root = ""
 
 [project]
 name = "pytest-clab"
-version = "0.1.1"
+version = "0.1.2"
 description = "A pytest plugin for managing containerlab topologies in tests."
 readme = "README.md"
 requires-python = ">=3.10"
