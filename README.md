@@ -138,7 +138,7 @@ def lab(clab):
 
 ```python
 def test_json_output(lab):
-    result = lab.cmd("inspect -f json", parse_json=True)
+    result = lab.cmd("version -j", parse_json=True)
     assert isinstance(result, dict)
 ```
 </details>
@@ -231,12 +231,12 @@ lab = clab("topology.clab.yml", startup_timeout=60)
 The plugin provides a hierarchy of exceptions for error handling:
 
 - **`ClabError`**: Base exception for all pytest-clab errors
-- **`TopologyNotFoundError`**: Topology file does not exist
-- **`ContainerlabNotFoundError`**: containerlab executable not found in PATH
-- **`DeploymentError`**: Topology deployment failed
-- **`InspectError`**: Failed to inspect running topology
-- **`CommandError`**: A containerlab command failed
-- **`NodeFailedError`**: A node entered a terminal failed state during startup
+  - **`TopologyNotFoundError`**: Topology file does not exist
+  - **`ContainerlabNotFoundError`**: containerlab executable not found in PATH
+  - **`DeploymentError`**: Topology deployment failed
+    - **`NodeFailedError`**: A node entered a terminal state (exited, dead) during startup
+  - **`InspectError`**: Failed to inspect running topology
+  - **`CommandError`**: A containerlab command failed
 
 ## Versioning
 
