@@ -257,6 +257,7 @@ def test_given_inspect_returns_invalid_json_when_inspect_called_then_raises_insp
         ("clab-test-lab-router1", "test-lab", "router1"),
         ("clab-test-lab-leaf-1-west", "test-lab", "leaf-1-west"),
         ("clab-other-lab-router1", "test-lab", "clab-other-lab-router1"),
+        ("clab-test-test-node1", "test", "test-node1"),
     ],
 )
 def test_given_full_name_when_short_name_extracted_then_returns_expected_short_name(

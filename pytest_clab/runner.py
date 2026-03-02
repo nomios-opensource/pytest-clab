@@ -110,7 +110,7 @@ class ClabRunner:
         """Extract node short_name from container name and lab_name."""
         marker = f"{lab_name}-"
         if marker in full_name:
-            return full_name.rsplit(marker, 1)[1]
+            return full_name.split(marker, 1)[1]
         return full_name
 
     def is_deployed(self) -> bool:

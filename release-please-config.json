@@ -8,5 +8,12 @@
     "prerelease": false,
     "packages": {
         ".": {}
-    }
+    },
+    "extra-files": [
+        {
+            "path": "uv.lock",
+            "type": "toml",
+            "jsonpath": "$.package[?(@.name.value=='pytest-clab')].version"
+        }
+    ]
 }

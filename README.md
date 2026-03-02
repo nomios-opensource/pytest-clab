@@ -71,7 +71,7 @@ The `clab` fixture is a factory that creates `ClabTopology` instances.
 - `cmd(command, parse_json=False)` - Execute any containerlab command, optionally parse JSON output
 
 ```python
-output = lab.cmd("inspect -f json", parse_json=True)
+output = lab.cmd(f"inspect -t {lab.topology_path} -f json", parse_json=True)
 ```
 
 ### Node Startup Readiness
